@@ -1,0 +1,307 @@
+/* 전체 적용 */
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: #000;
+}
+#wrap {
+  max-width: 1280px;
+}
+.img-fluid {
+  display: flex;
+  width: 100%;
+}
+
+/* 메뉴바 섹션 */
+.pc-menu {
+  position: relative;
+}
+.pc-menu span {
+  cursor: pointer;
+}
+.mo-menu-bar {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.mo-menu {
+  position: relative;
+  display: none;
+}
+.menu-drop {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 93%;
+  background: none;
+  border: none;
+  font-size: 4vw;
+  display: flex;
+}
+.dropdown-menu li span {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 2.5vw;
+  text-align: left;
+}
+.offcanvas {
+  width: 40% !important;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.offcanvas-body {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 3.5vw;
+  width: 100%;
+  position: relative;
+}
+.span-bg {
+  position: absolute;
+  /* transform: translate(); */
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* left: 0%; */
+  width: 50%;
+  height: 45vw;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  /* border: 1px solid red; */
+}
+.offcanvas-body span {
+  /* border: 1px solid black; */
+  width: 90%;
+  display: inline-block; /* 블록 속성으로 바꾸면 더 확실함 */
+  text-align: left;
+}
+.menu-logo {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 18%;
+  top: 50%;
+  left: 15%;
+}
+.menu-logo img {
+  width: 100%;
+}
+.menu-bar {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 50%;
+  top: 50%;
+  left: 64%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.menu-bar a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-bar span {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-bar a:hover {
+  color: #0078FF;
+}
+.offcanvas-body span:hover {
+  color: #0078FF;
+}
+
+/* 섹션04 슬라이드 */
+.sec04-slide-bg {
+  position: relative;
+  overflow: hidden;
+}
+.sec04-slide {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 62%;
+  left: 160%;
+  width: 330%;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.sec04img {
+  width: 10.6%;
+  flex-shrink: 0;
+}
+
+/* 버튼 스타일 */
+.slide-btn {
+  position: absolute;
+  top: 62%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+.btn-left {
+  left: 10px;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+/* 병원 둘러보기 */
+.sec05-slide-bg {
+  position: relative;
+}
+.sec05-mainimg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 51%;
+  left: 50%;
+  width: 88%;
+}
+.sec05-subimg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 82%;
+  left: 50%;
+  width: 89%;
+  height: 10%;
+  display: flex;
+}
+.sec05-subimg img {
+  width: 24%;
+}
+
+/* 메인 이미지 전환 효과 */
+.fade-img {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+/* 서브 이미지 기본 상태 */
+.sub-img {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/* 클릭된 (활성화된) 서브 이미지 */
+.sub-img.active {
+  filter: brightness(0.3);
+  border: 2px solid #333; /* 선택 표시 (선택사항) */
+}
+
+/* 오시는 길 전화연결 */
+.tel-btn-bg {
+  position: relative;
+}
+.telbtn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 74%;
+  width: 33%;
+  height: 10%;
+}
+
+.kakaomap {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 53.3%;
+  left: 29.9%;
+  width: 37%;
+  height: 64%;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+.map {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 5%;
+  text-align: center;
+  font:normal normal 400 12px/normal dotum, sans-serif;
+  width:700px;
+  height:732px;
+  color:#333;
+}
+#overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 900;
+  }
+.cost {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 85%;
+  left: 81.5%;
+  /* border: 1px solid red; */
+  width: 15%;
+  align-items: center;
+}
+.cost img {
+  width: 100%;
+  cursor: pointer;
+}
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  width: 100vw;
+  position: absolute;
+  transform: translate(-50% ,-0%);
+  top: 50%;
+  left: 50%;
+}
+
+.modal-body img {
+  max-width: 1280px;
+  width: 100%;
+}
+
+@media screen and (max-width:1280px) {
+  .menu-bar a {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width:768px) {
+  .pc-menu {
+    display: none;
+  }
+  .mo-menu {
+    position: relative;
+    display: block;
+  }
+}
